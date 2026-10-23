@@ -120,12 +120,419 @@
       </div>
     </section>
 
-    <section id="destinations" class="placeholder"><h2>Destinations</h2></section>
-    <section id="popular" class="placeholder"><h2>Popular</h2></section>
-    <section id="about" class="placeholder"><h2>About Us</h2></section>
-    <section id="contact" class="placeholder"><h2>Contact</h2></section>
+    <section id="destinations" class="section">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="section-eyebrow">Destinations</p>
+          <h2>Where do you want to go?</h2>
+          <p class="section-sub">Handpicked places around the world, ready for your next trip.</p>
+        </div>
+
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="europe">Europe</button>
+          <button class="chip" data-filter="asia">Asia</button>
+          <button class="chip" data-filter="beach">Beach</button>
+          <button class="chip" data-filter="mountains">Mountains</button>
+        </div>
+
+        <div class="cards">
+
+          <article class="card" data-category="europe city">
+            <div class="card-img" style="--img: url('image/paris.jpg')">
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+              <span class="card-tag">Europe</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Paris</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <p class="card-place"><i class="fa-solid fa-location-dot"></i> France</p>
+              <p class="card-text">Cafés, art and the Eiffel Tower at sunset in the city of lights.</p>
+              <div class="card-bottom">
+                <span class="price">from <strong>$899</strong></span>
+                <a href="#" class="btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="europe city">
+            <div class="card-img" style="--img: url('image/rome.avif')">
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+              <span class="card-tag">Europe</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Rome</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <p class="card-place"><i class="fa-solid fa-location-dot"></i> Italy</p>
+              <p class="card-text">Ancient history, great pasta and piazzas full of life.</p>
+              <div class="card-bottom">
+                <span class="price">from <strong>$799</strong></span>
+                <a href="#" class="btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="asia city">
+            <div class="card-img" style="--img: url('image/tokyo.avif')">
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+              <span class="card-tag">Asia</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Tokyo</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <p class="card-place"><i class="fa-solid fa-location-dot"></i> Japan</p>
+              <p class="card-text">Neon streets, temples and the best street food on the planet.</p>
+              <div class="card-bottom">
+                <span class="price">from <strong>$1,399</strong></span>
+                <a href="#" class="btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="europe beach">
+            <div class="card-img" style="--img: url('image/santorini.avif')">
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+              <span class="card-tag">Beach</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Santorini</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <p class="card-place"><i class="fa-solid fa-location-dot"></i> Greece</p>
+              <p class="card-text">White houses, blue domes and sunsets over the Aegean Sea.</p>
+              <div class="card-bottom">
+                <span class="price">from <strong>$1,099</strong></span>
+                <a href="#" class="btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="europe mountains">
+            <div class="card-img" style="--img: url('image/swiss-alps.jpg')">
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+              <span class="card-tag">Mountains</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Swiss Alps</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <p class="card-place"><i class="fa-solid fa-location-dot"></i> Switzerland</p>
+              <p class="card-text">Snowy peaks, scenic trains and cozy chalets in the mountains.</p>
+              <div class="card-bottom">
+                <span class="price">from <strong>$1,299</strong></span>
+                <a href="#" class="btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-category="europe mountains">
+            <div class="card-img" style="--img: url('image/reykjavik.jpg')">
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+              <span class="card-tag">Europe</span>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Reykjavik</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.7</span>
+              </div>
+              <p class="card-place"><i class="fa-solid fa-location-dot"></i> Iceland</p>
+              <p class="card-text">Northern lights, hot springs and wild volcanic landscapes.</p>
+              <div class="card-bottom">
+                <span class="price">from <strong>$999</strong></span>
+                <a href="#" class="btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="popular" class="section section-soft">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="section-eyebrow">Popular</p>
+          <h2>Our most loved trips</h2>
+          <p class="section-sub">Ready-made packages with flights, hotels and experiences included.</p>
+        </div>
+
+        <div class="cards">
+
+          <article class="card">
+            <div class="card-img" style="--img: url('image/trip-italy.jpg')">
+              <span class="badge-top">Best seller</span>
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Italian Adventure</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <ul class="trip-meta">
+                <li><i class="fa-regular fa-clock"></i> 7 days</li>
+                <li><i class="fa-solid fa-user-group"></i> Up to 12 people</li>
+              </ul>
+              <ul class="includes">
+                <li><i class="fa-solid fa-check"></i> Flights</li>
+                <li><i class="fa-solid fa-check"></i> Hotels</li>
+                <li><i class="fa-solid fa-check"></i> Guided tours</li>
+              </ul>
+              <div class="card-bottom">
+                <span class="price">from <strong>$899</strong></span>
+                <a href="#contact" class="btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="--img: url('image/trip-bali.avif')">
+              <span class="badge-top">Top rated</span>
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Bali Retreat</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.9</span>
+              </div>
+              <ul class="trip-meta">
+                <li><i class="fa-regular fa-clock"></i> 9 days</li>
+                <li><i class="fa-solid fa-user-group"></i> Up to 10 people</li>
+              </ul>
+              <ul class="includes">
+                <li><i class="fa-solid fa-check"></i> Flights</li>
+                <li><i class="fa-solid fa-check"></i> Villa stay</li>
+                <li><i class="fa-solid fa-check"></i> Spa &amp; yoga</li>
+              </ul>
+              <div class="card-bottom">
+                <span class="price">from <strong>$1,199</strong></span>
+                <a href="#contact" class="btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="--img: url('image/trip-newyork.jpg')">
+              <span class="badge-top">New</span>
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>New York Explorer</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.7</span>
+              </div>
+              <ul class="trip-meta">
+                <li><i class="fa-regular fa-clock"></i> 5 days</li>
+                <li><i class="fa-solid fa-user-group"></i> Up to 15 people</li>
+              </ul>
+              <ul class="includes">
+                <li><i class="fa-solid fa-check"></i> Flights</li>
+                <li><i class="fa-solid fa-check"></i> City hotel</li>
+                <li><i class="fa-solid fa-check"></i> City pass</li>
+              </ul>
+              <div class="card-bottom">
+                <span class="price">from <strong>$750</strong></span>
+                <a href="#contact" class="btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" style="--img: url('image/trip-iceland.jpg')">
+              <span class="badge-top">Limited</span>
+              <button class="fav-btn" aria-label="Add to favorites"><i class="fa-regular fa-heart"></i></button>
+            </div>
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Iceland Aurora</h3>
+                <span class="rating"><i class="fa-solid fa-star"></i> 4.8</span>
+              </div>
+              <ul class="trip-meta">
+                <li><i class="fa-regular fa-clock"></i> 6 days</li>
+                <li><i class="fa-solid fa-user-group"></i> Up to 8 people</li>
+              </ul>
+              <ul class="includes">
+                <li><i class="fa-solid fa-check"></i> Flights</li>
+                <li><i class="fa-solid fa-check"></i> Lodge stay</li>
+                <li><i class="fa-solid fa-check"></i> Aurora tour</li>
+              </ul>
+              <div class="card-bottom">
+                <span class="price">from <strong>$1,049</strong></span>
+                <a href="#contact" class="btn-primary btn-sm">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+
+        <div class="about-img"></div>
+
+        <div class="about-text">
+          <p class="section-eyebrow">About Us</p>
+          <h2>We turn trips into stories</h2>
+          <p class="section-sub">Skybound Travel is a team of travelers who love planning journeys. We handle flights, hotels and details, so you can enjoy the adventure.</p>
+
+          <ul class="features">
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-map-location-dot"></i></span>
+              <div>
+                <h4>Handpicked destinations</h4>
+                <p>Every place is checked by our team before it gets on the list.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-tags"></i></span>
+              <div>
+                <h4>Fair prices</h4>
+                <p>Clear costs with no hidden fees and flexible booking options.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-headset"></i></span>
+              <div>
+                <h4>Support on the way</h4>
+                <p>We are in touch before, during and after your trip.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><strong>50+</strong><span>Destinations</span></div>
+          <div class="stat"><strong>10k+</strong><span>Happy travelers</span></div>
+          <div class="stat"><strong>4.9</strong><span>Average rating</span></div>
+          <div class="stat"><strong>24/7</strong><span>Support</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section section-soft">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="section-eyebrow">Contact</p>
+          <h2>Let's plan your trip</h2>
+          <p class="section-sub">Tell us where you want to go and we will get back to you soon.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <ul class="contact-list">
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div>
+                <h4>Address</h4>
+                <p>Lviv, Ukraine</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <h4>Phone</h4>
+                <p>+380 96 063 53 66</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <h4>Email</h4>
+                <p>kakulapavlo@gmail.com</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon"><i class="fa-regular fa-clock"></i></span>
+              <div>
+                <h4>Working hours</h4>
+                <p>Mon–Sat, 9:00–19:00</p>
+              </div>
+            </li>
+          </ul>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <label class="form-field">
+                <span>Name</span>
+                <input type="text" placeholder="Your name">
+              </label>
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" placeholder="you@example.com">
+              </label>
+            </div>
+            <label class="form-field">
+              <span>Destination</span>
+              <input type="text" placeholder="Where do you want to go?">
+            </label>
+            <label class="form-field">
+              <span>Message</span>
+              <textarea rows="5" placeholder="Tell us about your trip"></textarea>
+            </label>
+            <button type="button" class="btn-primary form-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send message
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
 
   </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo"><i class="fa-solid fa-paper-plane"></i> Skybound Travel</a>
+        <p>Handpicked destinations and trips made just for you.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Lviv, Ukraine</li>
+          <li>+380 96 063 53 66</li>
+          <li>kakulapavlo@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Skybound Travel. All rights reserved.</p>
+    </div>
+  </footer>
 
   <script src="index.js"></script>
 </body>
