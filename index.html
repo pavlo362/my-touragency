@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skybound Travel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+
+      <a href="#home" class="logo">
+        <img src="image/Logo.png" alt="Skybound Travel">
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-extra">
+          <div class="lang-switch">
+            <button class="lang-btn" data-lang="ua">UA</button>
+            <button class="lang-btn active" data-lang="en">EN</button>
+          </div>
+          <a href="#destinations" class="btn-primary">Start Exploring</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="icon-btn" id="favoritesBtn" aria-label="Favorites">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge" id="favCount">0</span>
+        </button>
+
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon icon-moon"></i>
+          <i class="fa-solid fa-sun icon-sun"></i>
+        </button>
+
+        <div class="lang-switch desktop-only">
+          <button class="lang-btn" data-lang="ua">UA</button>
+          <button class="lang-btn active" data-lang="en">EN</button>
+        </div>
+
+        <a href="#destinations" class="btn-primary desktop-only">Start Exploring</a>
+
+        <label for="menu-toggle" class="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-art"></div>
+
+      <div class="container">
+        <p class="hero-eyebrow">Your next adventure</p>
+
+        <div class="hero-text">
+          <h1>Fly higher.<br>Explore further.</h1>
+          <p>Plan your getaway with Skybound Travel: handpicked destinations, easy booking and trips made just for you.</p>
+        </div>
+
+        <div class="search-card">
+          <label class="field">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="field-body">
+              <span class="field-label">Location</span>
+              <input type="text" placeholder="Search destinations">
+            </span>
+          </label>
+
+          <label class="field">
+            <i class="fa-regular fa-calendar"></i>
+            <span class="field-body">
+              <span class="field-label">Check in</span>
+              <input type="date">
+            </span>
+          </label>
+
+          <label class="field">
+            <i class="fa-regular fa-calendar"></i>
+            <span class="field-body">
+              <span class="field-label">Check out</span>
+              <input type="date">
+            </span>
+          </label>
+
+          <label class="field">
+            <i class="fa-solid fa-user-group"></i>
+            <span class="field-body">
+              <span class="field-label">Guests</span>
+              <input type="number" min="1" placeholder="Add guests">
+            </span>
+          </label>
+
+          <button type="button" class="btn-primary search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i> Search
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="placeholder"><h2>Destinations</h2></section>
+    <section id="popular" class="placeholder"><h2>Popular</h2></section>
+    <section id="about" class="placeholder"><h2>About Us</h2></section>
+    <section id="contact" class="placeholder"><h2>Contact</h2></section>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
