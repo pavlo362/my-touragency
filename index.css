@@ -281,15 +281,15 @@ button {
   transition: transform 0.25s, opacity 0.25s;
 }
 
-.menu-toggle:checked ~ .nav-actions .burger span:nth-child(1) {
+.menu-toggle:checked~.nav-actions .burger span:nth-child(1) {
   transform: translateY(0.45rem) rotate(45deg);
 }
 
-.menu-toggle:checked ~ .nav-actions .burger span:nth-child(2) {
+.menu-toggle:checked~.nav-actions .burger span:nth-child(2) {
   opacity: 0;
 }
 
-.menu-toggle:checked ~ .nav-actions .burger span:nth-child(3) {
+.menu-toggle:checked~.nav-actions .burger span:nth-child(3) {
   transform: translateY(-0.45rem) rotate(-45deg);
 }
 
@@ -327,7 +327,6 @@ button {
   transform: translateX(-50%);
   width: min(100%, 60rem);
   height: 58%;
-  background: url("image/hero.png") center top / contain no-repeat;
   pointer-events: none;
 }
 
@@ -401,7 +400,7 @@ button {
   background: var(--bg-soft);
 }
 
-.field > i {
+.field>i {
   font-size: 1rem;
   color: var(--text);
 }
@@ -944,7 +943,7 @@ button {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
 
-  .menu-toggle:checked ~ .nav-menu {
+  .menu-toggle:checked~.nav-menu {
     display: flex;
   }
 
@@ -992,5 +991,46 @@ button {
 
   .search-card {
     grid-template-columns: 1fr;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.card-img {
+  height: 230px;
+  background: var(--img) center / cover no-repeat;
+}
+
+.card {
+  min-width: 0;
+}
+
+.card-top h3 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 750px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card-img {
+    height: 220px;
   }
 }
