@@ -296,7 +296,7 @@ button {
 .hero {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   min-height: calc(100vh - 5.5rem);
   min-height: calc(100svh - 5.5rem);
   padding-block: 2rem 3rem;
@@ -440,7 +440,7 @@ button {
 }
 
 .section {
-  padding-block: clamp(3rem, 8vw, 6rem);
+  padding-block: clamp(3rem, 3vw, 6rem);
   background: var(--bg);
   transition: background 0.3s;
 }
